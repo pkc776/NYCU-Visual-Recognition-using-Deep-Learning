@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.env
+.venv/
+wandb/
+outputs/
+release_folder/
+pred.npz
+results.zip
+*.pth
+*.pt
+*.ckpt
+.DS_Store

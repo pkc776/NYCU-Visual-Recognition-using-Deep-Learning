@@ -1,0 +1,16 @@
+# Checkpoints
+checkpoints/
+checkpoints_ablation/
+
+# Data and logs
+data/
+train.log
+wandb/
+
+# Predictions
+prediction.csv
+prediction.zip
+
+# Python caches
+__pycache__/
+*.py[cod]

@@ -1,0 +1,42 @@
+data_root: release_folder/hw4_realse_dataset
+output_dir: outputs/promptir_hw4_ft256_from_ema
+seed: 777
+model:
+  width: 32
+  enc_blocks:
+  - 2
+  - 2
+  - 4
+  - 8
+  bottleneck_blocks: 4
+  dec_blocks:
+  - 2
+  - 2
+  - 2
+  - 2
+  drop_path_rate: 0.1
+train:
+  epochs: 600
+  batch_size: 8
+  grad_accum_steps: 2
+  num_workers: 8
+  lr: 0.0003
+  min_lr: 1.0e-06
+  weight_decay: 5.0e-06
+  warmup_epochs: 5
+  grad_clip: 1.0
+  amp: false
+  ema_decay: 0.9995
+  val_per_degradation: 100
+  eval_every: 5
+  save_every: 20
+  l1_weight: 1.0
+  ssim_weight: 0.08
+  edge_weight: 0.015
+  residual_weight: 0.35
+  freq_residual_weight: 0.08
+  snow_weight: 1.15
+  hard_weight: 0.1
+  augment: true
+  crop_size: 256
+  mixup_prob: 0.0

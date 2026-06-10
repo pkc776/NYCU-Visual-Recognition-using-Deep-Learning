@@ -1,0 +1,11 @@
+checkpoints/
+train/
+*.json
+__pycache__/
+*.pyc
+hw3.txt
+pane.txt
+scratch.py
+plot_curves.py
+run_infer_vis.py
+report.tex

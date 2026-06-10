@@ -1,0 +1,27 @@
+# Data
+nycu-hw2-data/
+nycu-hw2-data.tar.gz
+
+# Checkpoints
+checkpoints/
+checkpoints_v2/
+checkpoints_test/
+*.pth
+
+# Results and logs
+pred.json
+val_pred*.json
+log.json
+training_curve.png
+vis_output/
+wandb/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# System/IDE
+.DS_Store
+.vscode/
+.idea/
